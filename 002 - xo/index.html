@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prezentacja kółko i krzyżyk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id='game' ></div>
+<div id = "selectSym" show = true>
+    <div>
+        <label>
+            <input type="checkbox" class="humanPlay" onclick="gameObj.graczeMajaGrac()">
+        </label> Gra dla dwóch osób<br>
+        <div id="gracze"></div>
+        <label>
+            <input type="checkbox" class="computerPlay" onclick="gameObj.komputerMaGrac()">
+        </label> Gra z komputerem<br>
+    </div>
+    <p>Wybierz symbol:</p>
+    <div style = 'text-align: center'>
+        <button class="nowe" onClick="gameObj.selectSym('X')">X</button>
+        <button class="nowe" onClick="gameObj.selectSym('O')">O</button>
+    </div>
+</div>
+<div id="endgame"></div>
+<button id="odsw" onClick="gameObj.startGame()">Nowa gra</button>
+<!--    <script src="script.js"></script>-->
+<script src="konstruktor.js"></script>
+</body>
+</html>

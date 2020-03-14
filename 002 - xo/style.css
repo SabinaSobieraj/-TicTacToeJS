@@ -1,0 +1,106 @@
+#game {
+    width: 330px;
+    float:left;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#endgame {
+    float: left;
+    display: none;
+    width:  320px;
+    height: 312px;
+    background-color: rgba(88, 87, 87, 0.8);
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+    font-family: 'Segoe UI';
+}
+
+#endgame[show] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#selectSym{
+    display: none;
+    float: left;
+    width: 320px;
+    height: 312px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Segoe UI';
+}
+
+#selectSym[show] {
+    display: block;
+}
+
+
+#selectSym button{
+    font-size:  50px;
+    width: 70px;
+}
+
+#selectSym  button:first-of-type {
+    margin-right: 20px;
+}
+/* .selectSym  button:last-of-type {
+  margin-left: 10px;
+}  */
+
+.cell {
+    flex-shrink: 0;
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    margin: 2px;
+    color: white;
+}
+
+.onClick {
+    background-color: white;
+}
+
+button:hover {
+    background-color: rgba(144, 114, 114, 0.5);
+}
+
+.nowe {
+    background-color: darkgrey;
+    color: white;
+    text-transform: uppercase;
+}
+
+#odsw {
+    display: block;
+    clear: both;
+    background-color: darkgrey;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+}
+.computerPlay {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+
+.humanPlay {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
